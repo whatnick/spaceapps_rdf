@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<rdf:Description rdf:about="nds:datapoint">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:dataset">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:coordinatesystem">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:target">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:sensor">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:observation">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:field">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:electromagnetic">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+		<rdfs:subClassOf>
+			<rdf:Description rdf:about="nds:field"/>
+		</rdfs:subClassOf>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:gravitational">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+		<rdfs:subClassOf>
+			<rdf:Description rdf:about="nds:field"/>
+		</rdfs:subClassOf>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:coordinate">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:sensor"/>
+		</rdfs:domain>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:target"/>
+		</rdfs:domain>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:format">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:dataset"/>
+		</rdfs:domain>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:hasSensor">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:sensor"/>
+		</rdfs:domain>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:hasTarget">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="xsd:dateTime">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:creationtime">
+		<rdf:type>
+			<rdf:Description rdf:about="xsd:dateTime"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:creationTime">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:range>
+			<rdf:Description rdf:about="nds:dataset"/>
+		</rdfs:range>
+	</rdf:Description>
+</rdf:RDF>
