@@ -75,13 +75,19 @@
 			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		</rdf:type>
 		<rdfs:domain>
-			<rdf:Description rdf:about="nds:sensor"/>
+			<rdf:Description rdf:about="nds:field"/>
+		</rdfs:domain>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:particle"/>
 		</rdfs:domain>
 	</rdf:Description>
 	<rdf:Description rdf:about="nds:hasTarget">
 		<rdf:type>
 			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
 		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:datapoint"/>
+		</rdfs:domain>
 	</rdf:Description>
 	<rdf:Description rdf:about="xsd:dateTime">
 		<rdf:type>
@@ -100,5 +106,96 @@
 		<rdfs:range>
 			<rdf:Description rdf:about="nds:dataset"/>
 		</rdfs:range>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:value">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:field"/>
+		</rdfs:domain>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:coordinate"/>
+		</rdfs:domain>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:units">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:field"/>
+		</rdfs:domain>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:particle"/>
+		</rdfs:domain>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:hasCoordinateSystem">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:coordinate"/>
+		</rdfs:domain>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:software">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:format"/>
+		</rdfs:domain>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:particle">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:mission">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:dataset"/>
+		</rdfs:domain>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:absolutetarget">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+		<rdfs:subClassOf>
+			<rdf:Description rdf:about="nds:target"/>
+		</rdfs:subClassOf>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:nominaltarget">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+		<rdfs:subClassOf>
+			<rdf:Description rdf:about="nds:target"/>
+		</rdfs:subClassOf>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:directobservation">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+		<rdfs:subClassOf>
+			<rdf:Description rdf:about="nds:observation"/>
+		</rdfs:subClassOf>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:indirectobservation">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+		</rdf:type>
+		<rdfs:subClassOf>
+			<rdf:Description rdf:about="nds:observation"/>
+		</rdfs:subClassOf>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:hasObservation">
+		<rdf:type>
+			<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+		</rdf:type>
+		<rdfs:domain>
+			<rdf:Description rdf:about="nds:datapoint"/>
+		</rdfs:domain>
 	</rdf:Description>
 </rdf:RDF>
