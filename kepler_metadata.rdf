@@ -20,4 +20,9 @@
 			<rdf:Description rdf:about="nds:software"/>
 		</rdf:type>
 	</rdf:Description>
+	<rdf:Description rdf:about="nds:radiometer">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:sensor"/>
+		</rdf:type>
+	</rdf:Description>
 </rdf:RDF>

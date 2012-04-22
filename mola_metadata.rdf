@@ -25,4 +25,9 @@
 			<rdf:Description rdf:about="nds:software"/>
 		</rdf:type>
 	</rdf:Description>
+	<rdf:Description rdf:about="nds:img">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:format"/>
+		</rdf:type>
+	</rdf:Description>
 </rdf:RDF>
