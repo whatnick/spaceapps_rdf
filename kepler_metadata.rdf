@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<rdf:Description rdf:about="nds:kepler">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:mission"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:fits">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:format"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:rightascensiondeclination">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:coordinatesystem"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:cfitsio">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:software"/>
+		</rdf:type>
+	</rdf:Description>
+</rdf:RDF>
