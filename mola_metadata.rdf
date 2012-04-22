@@ -5,4 +5,24 @@
 			<rdf:Description rdf:about="nds:nominaltarget"/>
 		</rdf:type>
 	</rdf:Description>
+	<rdf:Description rdf:about="nds:mars_global_surveyor">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:mission"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:mola">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:sensor"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:planetocentric">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:coordinatesystem"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:molaviewer">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:software"/>
+		</rdf:type>
+	</rdf:Description>
 </rdf:RDF>
