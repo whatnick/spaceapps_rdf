@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<rdf:Description rdf:about="nds:hgt">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:format"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:gdal">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:software"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:srtm">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:mission"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:latlon">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:coordinatesystem"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:spatialcoordinate">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:coordinate"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:australia">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:nominaltarget"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:radar">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:sensor"/>
+		</rdf:type>
+	</rdf:Description>
+	<rdf:Description rdf:about="nds:c-band">
+		<rdf:type>
+			<rdf:Description rdf:about="nds:electromagnetic"/>
+		</rdf:type>
+	</rdf:Description>
+</rdf:RDF>

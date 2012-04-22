@@ -24,6 +24,7 @@
 		<rdf:type>
 			<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
 		</rdf:type>
+		<rdfs:comment>can derive from http://nasataxonomy.jpl.nasa.gov/xml/instruments.skos</rdfs:comment>
 	</rdf:Description>
 	<rdf:Description rdf:about="nds:observation">
 		<rdf:type>
@@ -157,6 +158,7 @@
 		<rdfs:domain>
 			<rdf:Description rdf:about="nds:dataset"/>
 		</rdfs:domain>
+		<rdfs:comment>Can derive missions from http://nasataxonomy.jpl.nasa.gov/xml/missionsprojects.skos</rdfs:comment>
 	</rdf:Description>
 	<rdf:Description rdf:about="nds:absolutetarget">
 		<rdf:type>
